@@ -17,7 +17,13 @@ class Veiculo_um {
 
     int calculaTempoUso(){
         int anoAtual = LocalDate.now().getYear();
-        return anoAtual - this.ano;
-        
+        return calculaTempoUso(anoAtual);
+
     }
+
+    int calculaTempoUso(int anoBase){
+        return anoBase - this.ano - 1;
+    }
+
+    
 }

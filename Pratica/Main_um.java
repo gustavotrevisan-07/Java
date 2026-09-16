@@ -1,4 +1,7 @@
 void main(){
+    new Veiculo_um();
+
+
     Veiculo_um fusca = new Veiculo_um();
     fusca.marca = "Volkswagen";
     fusca.modelo = "Fusca do Itamar - Série Ouro";
@@ -14,7 +17,24 @@ void main(){
 
     Veiculo_um novoUno = uno;
     novoUno.ano = 2014;
-    
+
+
+
 
     Veiculo_um brasilia = new Veiculo_um("Volkswagen", "Brasília", 1975, "GHI-9012");
+
+      IO.println("Veículo: " + fusca.marca + " - " + fusca.modelo);
+    int tempoUsoFusca = fusca.calculaTempoUso();
+    IO.println("Tempo de uso do Fusca: " + tempoUsoFusca + " anos");
+
+    int tempoUsoFusca2030 = fusca.calculaTempoUso(2030);
+    IO.println("Tempo de uso do Fusca em 2030: " + tempoUsoFusca2030 + " anos");
+
+
+    int tempoUsoUno = uno.calculaTempoUso();
+    IO.println("Tempo de uso do Uno: " + tempoUsoUno + " anos");
+    
+    System.out.printf("Tempo de uso do uno: %d anos", tempoUsoUno);
+    
 }
+
