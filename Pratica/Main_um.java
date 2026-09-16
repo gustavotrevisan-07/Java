@@ -23,7 +23,8 @@ void main(){
 
     Veiculo_um brasilia = new Veiculo_um("Volkswagen", "Brasília", 1975, "GHI-9012");
 
-      IO.println("Veículo: " + fusca.marca + " - " + fusca.modelo);
+      
+    IO.println("Veículo: " + fusca.getMarca() + " - " + fusca.getModelo());
     int tempoUsoFusca = fusca.calculaTempoUso();
     IO.println("Tempo de uso do Fusca: " + tempoUsoFusca + " anos");
 
@@ -35,6 +36,5 @@ void main(){
     IO.println("Tempo de uso do Uno: " + tempoUsoUno + " anos");
     
     System.out.printf("Tempo de uso do uno: %d anos", tempoUsoUno);
-    
 }
 
